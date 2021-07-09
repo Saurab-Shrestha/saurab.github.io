@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Roboto, Helvetica, Arial, serif;
+    background: url(http://www.hdwallsource.com/img/2014/10/blurred-36379-37207-hd-wallpapers.jpg);
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.profile-container{
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    height: auto;
+    width: 450px;
+    background: url(https://s-media-cache-ak0.pinimg.com/736x/3a/1f/02/3a1f02c10700daa80655a302c5a27acf.jpg);
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 0 0 100px 10px #fff;
+    border-radius: 12px;
+}
+.card{
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.profileImg{
+    overflow: hidden;
+}
+#profileImage{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin: 0 auto;
+    transition: all .3s linear;
+    overflow: hidden;
+}
+/* #profileImage:hover{
+    transform: scale(1.1);
+} */
+h1{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 10px;
+    transition: all ease 0.250s;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+h2{
+    text-align: center;
+    color: cadetblue;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 0px;
+    margin: 0;
+}
+.profile-bio{
+    text-align: center;
+    color: #fff;
+}
+.profile-bio .bio{
+    color: crimson;
+    font-size: 1.2rem;
+}
+p{
+    font-size: 1.1rem;
+    color: #fdfdfd;
+}
+
+/* .profile-social-links {
+    position: relative;
+    margin-top: -440px;
+    margin-left: -100px;
+    list-style-type: none;
+    opacity: 0;
+    transition: all ease 0.5s;
+  } */
+.profile-social-links{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.profile-social-links li{
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+i{
+    color: black;
+}
+.github button{
+    width: 150px;
+    height: 40px;
+    font-size: 1.2rem;
+    background-color: greenyellow;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.github button:hover{
+    background-color: rgb(137, 209, 28);
+}

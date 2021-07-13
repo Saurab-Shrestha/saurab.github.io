@@ -1,0 +1,369 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,500&display=swap");
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background: #000;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+/* sidebar */
+aside{
+    position: fixed;
+    background: #222;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100vh;
+    overflow: none;
+    z-index: 1;
+    text-align: center;
+    padding: 0;
+}
+/* aside img {
+	filter: grayscale(100%) contrast(50%) brightness(100%);
+	margin-bottom: -3px;
+}
+ */
+nav{
+    transition: all 0.3s ease;
+}
+nav .sidebar{
+    padding-top: 30px;
+}
+nav .sidebar .logo{
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    border: 5px solid #009688;
+}
+nav .sidebar .menu{
+    margin-top: 20px;
+    display: block;
+}
+nav .sidebar .menu li{
+    padding-left:20px;
+    display: flex;
+    list-style: none;
+    padding: 15px 0;
+    color: #fff;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+nav .sidebar .menu li a{
+    color: #fff;
+}
+
+nav .sidebar .menu li a i{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+nav .sidebar .menu li.active{
+    background: black;
+}
+nav .sidebar .menu li:hover{
+    background: #000;
+}
+
+
+/* home section styling */
+main{
+    margin-left: 200px;
+}
+section{
+    padding-top: 40px;
+  }
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url("https://images.unsplash.com/photo-1510683379652-65d6f033f155?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c0fa8f612719550d01fed572c8c2a7e1&auto=format&fit=crop&w=989&q=80") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+  }
+  .home .home-content{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home .text-one{
+    font-size: 25px;
+    color: #fff;
+  }
+  .home .text-two{
+    color: #fff;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  .home .text-three{
+    font-size: 40px;
+    margin: 5px 0;
+    color: #4070f4;
+  }
+  .home .text-four{
+    font-size: 23px;
+    margin: 5px 0;
+    color: #205879;
+  }
+  .home .button{
+    margin: 14px 0;
+  }
+  .home .button button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #4070f4;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+  }
+  .home .button button:hover{
+    border-color: #4070f4;
+    background-color: #fff;
+    color: #4070f4;
+  }
+
+/* About section */
+ .container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container .followers{
+    width: 200px;
+    background: #222;
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    margin-right: 20px;
+    border-radius: 0.5rem;
+    border: 1px solid #009688;
+    transition: all 0.3s ease;
+}
+.container .followers:hover{
+    background: #444;
+}
+
+.about{
+    width: 80%;
+    height: 100vh;
+    margin:40px auto;
+    background: transparent;
+}
+.about .about-content .text-one{
+    font-family: "Poppins";
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3;
+}
+.about .about-content p {
+    font-size: 1.2rem;
+	color: #b2b2b2;
+}
+.about .about-content span{
+    font-weight: 600;
+	color: #fff;
+}
+.about .button button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #4070f4;
+    color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+
+.about  .button button:hover{
+    border-color: #4070f4;
+    background-color: #fff;
+    color: #4070f4;
+}
+
+/* Repo section */
+.repo{
+    height: auto;
+}
+
+
+.repo .github-repo{
+    width: 80%;
+    margin: 10px auto;
+    padding-top: 20px;
+}
+.repo .github-repo h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2;
+    padding-bottom: 20px;
+}
+
+/* .repo .github-repo .card{
+    width: 90%;
+    margin: 0 auto;
+    background: #222;
+    padding: 0 20px;
+} */
+.repo .github-repo .body{
+    width: 85%;
+    margin: 0 auto;
+    background: #35363b;
+    margin-top: 20px;
+    border: 1px solid #009688;
+    border-radius: 20px;
+    padding: 10px;
+}
+.repo .github-repo .project-title h1 a{
+    color: #f2f2f2;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.repo .github-repo .project-desc{
+    padding: 15px;
+}
+.repo .github-repo .project-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.repo .github-repo .project-footer .project-tags{
+    padding: 15px 0 0 15px;
+}
+.repo .github-repo .project-footer .project-tags ul{
+    display: flex;
+    flex-direction: row;
+}
+.repo .github-repo .project-footer .project-tags ul li{
+    list-style-type: none;
+    background: #444;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 10px;
+    margin-left: 10px;
+    color: #fff;
+}
+.repo .github-repo .project-footer .project-stars{
+    padding: 15px;
+}
+/* contact */
+
+/* =========== Contact =========== */
+.contact{
+    height: 100vh;
+    width: 80%;
+    margin: 20px auto;
+}
+label {
+	color: #b2b2b2;
+}
+
+form input[type="text"],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border: 1px solid #222;
+	background: transparent;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	color: #b2b2b2;
+}
+
+form input[type="text"]:focus,
+textarea:focus {
+	outline: none;
+	border: 1px solid #009688;
+}
+
+input[type="submit"] {
+	background-color: transparent;
+	color: #b2b2b2;
+	text-transform: uppercase;
+	padding: 12px 20px;
+	border: 1px solid #222;
+	cursor: pointer;
+	transition: all 0.35s;
+}
+
+input[type="submit"]:hover {
+	background-color: #b2b2b2;
+	color: #222;
+}
+
+.contact .container {
+	margin-top: 20px;
+	margin-bottom: 100px;
+	background: transparent;
+	padding: 20px 0;
+}
+
+/* footer */
+
+/* =========== Footer =========== */
+
+footer {
+	border-top: 1px solid #222;
+}
+
+.top-bar {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.top-bar a {
+	margin: 10px;
+	font-size: 2em;
+	color: #b2b2b2;
+	transition: all .35s;
+	display: inline-block;
+}
+
+.top-bar a:hover{
+	transform: scale(1.1);
+	color: #009688;
+}
+
+.bottom-bar {
+	background: #000;
+	font-size: 0.75em;
+	text-align: center;
+}

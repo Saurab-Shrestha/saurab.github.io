@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- side navigatio bar -->
+    <aside>
+        <nav>
+            <div class="sidebar">
+                <div class="logo"><a href="#"><img id="profileImage" ></a></div>
+                <ul class="menu">
+                    <li class="nav-list active"><a href="#home"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li class="nav-list"><a href="#about"><i class="fa fa-user"></i><span> About</span></a></li>
+                    <li class="nav-list"><a href="#repo"><i class="fa fa-image"></i><span>Repo</span></a></li>
+                    <li class="nav-list"><a href="#contact"><i class="fa fa-phone"></i><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+    <!-- body -->
+    <main>
+        <!-- home section -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <div class="text">
+                  <div class="text-one">Hello,</div>
+                  <div class="text-two">I'm <span id="fullName"></span></div>
+                  <div class="text-three" id="bio"></div>
+                  <div class="text-four">From <span id="country"></span></div>
+                </div>
+                <div class="button">
+                  <button>Hire Me</button>
+                </div>
+              </div>
+        </section>
+
+        <!-- About section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="followers">
+                    <span id="followersInfo"></span>
+                    <div class="label">Followers</div>
+                </div>
+                <div class="followers">
+                    <span id="followingInfo">0</span>
+                    <div class="label">Following</div>
+                </div>
+                <div class="followers">
+                    <span id="reposInfo"></span>
+                    <div class="label">Repo</div>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 class="text-one">About Me</h2>
+
+                <p>
+                    <span>Hello. I'm Saurab.</span>I'm a student currently studying Bachelore in Computer Science and Information Technology.
+                </p>
+                <p>
+                   I'm interested in Backend web development. I have basic knowledge about  C, C++ and few web development languages.
+                </p>
+            </div>
+            <div class="button">
+                <a id="githubLink"><button>Find me on <i class="fa fa-github"></i></button></a>
+            </div>
+            
+        </section>
+        <!-- Repo section -->
+        <section class="repo" id="repo">
+            <div class="github-repo">
+                <h2>My Projects</h2>
+                <div>
+                    <ul>
+                        <li style="list-style: none;" id="body"></li>
+                    </ul>
+
+                </div>
+            </div>          
+        </section>
+
+        <!-- contact secion -->
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <div class="container">
+                <form action="#">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" style="height:200px"></textarea>
+                    <input type="submit" value="message">
+                </form>
+            </div>
+        </section>
+          <!-- footer -->
+    <footer>
+		<section class="top-bar">
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-github"></i></a>
+		</section>
+		<section class="bottom-bar">
+			<p>&copy|All rights reserved</p>
+		</section>
+	</footer>
+    </main>
+
+  
+    <script src="jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
